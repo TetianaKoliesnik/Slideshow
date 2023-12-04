@@ -11,21 +11,30 @@ body{
 
 .slideshow{
 	position: relative;
-	width: 1200px;
-	height: 800px;
+	width: 900px;
+	height: 700px;
 	background: blueviolet;
 }
 
 .slideshow__slides{
-	background-color: aqua;
 	width: 100%;
 	height: 100%; /* of the closest parent with defined position (here .slideshow)*/
+	
 }
 
 .slideshow__slide{
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%; /* of the closest parent with defined position (here .slideshow__slides)*/
+	display: none;
 }
+
+.slideshow__slide--visible{
+	display: block;
+}
+
 .slideshow__img{
 	width: 100%;
 	height: 100%;
@@ -33,17 +42,52 @@ body{
 	
 }
 
+.slideshow__controls{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
 
+.slideshow__controll-button {
+	padding: 0.5rem;
+}
+.slideshow__controll-button:hover{
+	background-color: darkgreen;
+	opacity: 50%;
+}
 
 .slideshow__caption{
-	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
 }
 .slideshow__dots{
-	display: none;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-flow: row nowrap;
+	gap: 0,2rem;
 }
+
 .slideshow__dot{
-	display: none;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background: lightseagreen;
 }
 .slideshow__counter{
-	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+
 }
