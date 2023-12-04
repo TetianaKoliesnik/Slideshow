@@ -1,0 +1,49 @@
+html{
+	font-size: 30px;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.slideshow{
+	position: relative;
+	width: 1200px;
+	height: 800px;
+	background: blueviolet;
+}
+
+.slideshow__slides{
+	background-color: aqua;
+	width: 100%;
+	height: 100%; /* of the closest parent with defined position (here .slideshow)*/
+}
+
+.slideshow__slide{
+	width: 100%;
+	height: 100%; /* of the closest parent with defined position (here .slideshow__slides)*/
+}
+.slideshow__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* iso background-size: cover; */
+	
+}
+
+
+
+.slideshow__caption{
+	display: none;
+}
+.slideshow__dots{
+	display: none;
+}
+.slideshow__dot{
+	display: none;
+}
+.slideshow__counter{
+	display: none;
+}
