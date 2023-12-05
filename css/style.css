@@ -11,9 +11,8 @@ body{
 
 .slideshow{
 	position: relative;
-	width: 900px;
-	height: 700px;
-	background: blueviolet;
+	width: 70vw;
+	height: 100vh;
 }
 
 .slideshow__slides{
@@ -53,41 +52,16 @@ body{
 	justify-content: space-between;
 }
 
-.slideshow__controll-button {
+.slideshow__control-button {
 	padding: 0.5rem;
 }
-.slideshow__controll-button:hover{
+.slideshow__control-button:hover{
 	background-color: darkgreen;
-	opacity: 50%;
+	opacity: 30%;
 }
 
 .slideshow__caption{
 	position: absolute;
 	top: 100%;
 	left: 0;
-}
-.slideshow__dots{
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	flex-flow: row nowrap;
-	gap: 0,2rem;
-}
-
-.slideshow__dot{
-	display: block;
-	width: 1rem;
-	height: 1rem;
-	border-radius: 100%;
-	background: lightseagreen;
-}
-.slideshow__counter{
-	position: absolute;
-	top: 100%;
-	right: 0;
-
 }
